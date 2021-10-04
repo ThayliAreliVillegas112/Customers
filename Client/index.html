@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>Actividad</title>
+</head>
+
+<body>
+  <div>
+    <h3 class="text-center">Register Customers</h3>
+  </div>
+  <div id="table"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+  <div class="container-fluid">
+    <div class="card text-center">
+      <div class="card-header">
+        <h4 class="text-center">-- Customers --</h4>
+      </div>
+      <div class="card-body">
+        <form id="formulario"  method="POST">
+          <div class="row">
+            <div class="col-3">
+              <div class="form-group">
+                <label for="customerNumber">Customers number</label>
+                <input type="number" class="form-control" id="customerNumber">
+              </div>
+              <div class="form-group">
+                <label for="customerName">Customer Name</label>
+                <input type="text" class="form-control" id="customerName">
+              </div>
+              <div class="form-group">
+                <label for="addressLine2">Address Line 2</label>
+                <input type="text" class="form-control" id="addressLine2">
+              </div>
+              <div class="form-group">
+                <label for="postalCode">Postal Code</label>
+                <input type="text" class="form-control" id="postalCode">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label for="contactLastName">Contact Last Name</label>
+                <input type="text" class="form-control" id="contactLastName">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city">
+              </div>
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country">
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label for="contactFirstName">Contact First Name</label>
+                <input type="text" class="form-control" id="contactFirstName">
+              </div>
+              <div class="form-group">
+                <label for="addressLine1">Addres Line 1</label>
+                <input type="text" class="form-control" id="addressLine1">
+              </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state">
+              </div>
+              <div class="form-group">
+                <label for="salesRepEmployeeNumber">Sales Rep Employee Number</label>
+                <input type="text" class="form-control" id="salesRepEmployeeNumber">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                <label for="crediLimit"> Credit Limit</label>
+                <input type="text" class="form-control" id="creditLimit">
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-muted text-right">
+            <button type="submit" onclick="save()" class="btn btn-outline-success" id="guardar">Registrar</button>            
+        </form>
+        <button  class="btn btn-warning" onclick="update()" id="Modificar">Modificar</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body> <!-- -->
+</html>
