@@ -1,6 +1,6 @@
 
-let btn1 = document.getElementById("guardar");
-let btn2 = document.getElementById("modificar");
+let guardar = document.getElementById("guardar");
+let modificar = document.getElementById("modificar");
 
 guardar.style.display = "block"
 modificar.style.display = "none"
@@ -115,9 +115,9 @@ const save = () => {
     });
 }
 
-const delete = id => {
+/*const delete =() id => {
     $.ajax({
-        type: 'DELETE',
+        type: 'POST',
         headers: { 
             "Accept": "application/json",
         },
@@ -125,7 +125,7 @@ const delete = id => {
     }).done(res => {
         console.log(res);
     });
-}
+}*/
 
 
 const update = () => {
