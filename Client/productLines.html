@@ -7,68 +7,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <title>Products</title>
+  <title>Products Line</title>
 </head>
 
 <body>
   <div>
     <a href="index.html"><button  class="btn btn-outline-info" style="text-align: left; margin-top: 30px; margin-left: 30px;">Regresar a pantalla principal</button></a>
-    <h3 class="text-center">Register Products</h3>
+    <h3 class="text-center">Register Product Line</h3>
   </div>
   <div id="table"></div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-  
+  <script src="./"></script>
   <div class="container-fluid">
     <div class="card text-center">
       <div class="card-header">
-        <h4 class="text-center">-- Products --</h4>
+        <h4 class="text-center">-- Products Lines --</h4>
       </div>
       <div class="card-body">
         <form id="formulario"  method="POST">
           <div class="row">
             <div class="col-3">
               <div class="form-group">
-                <label for="productCode">Product code</label>
-                <input type="text" class="form-control" id="productCode">
-              </div>
-              <div class="form-group">
-                <label for="productName">Product name</label>
-                <input type="text" class="form-control" id="productName">
-              </div>
-              <div class="form-group">
                 <label for="productLine">Product Line</label>
-                <input type="tel" class="form-control" id="productLine">
+                <input type="text" class="form-control" id="productLine">
               </div>
               <div class="form-group">
-                <label for="productScale">Product Scale</label>
-                <input type="text" class="form-control" id="productScale">
+                <label for="textDescription">Text Description</label>
+                <input type="text" class="form-control" id="textDescription">
               </div>
             </div>
             <div class="col-3">
               <div class="form-group">
-                <label for="productVendor">Product vendor</label>
-                <input type="text" class="form-control" id="productVendor">
+                <label for="htmlDescription">HTML Description</label>
+                <input type="text" class="form-control" id="htmlDescription">
               </div>
               <div class="form-group">
-                <label for="productDescription">Product Description</label>
-                <input type="text" class="form-control" id="productDescription">
-              </div>
-              <div class="form-group">
-                <label for="quantityInStock">Quantity In Stock</label>
-                <input type="number" class="form-control" id="quantityInStock">
-              </div>
-              <div class="form-group">
-                <label for="buyPrice">Buy price</label>
-                <input type="number" class="form-control" id="buyPrice">
+                <label for="image">Image</label>
+                <input type="number" class="form-control" id="image">
               </div>
             </div>
-            <div class="col-3">
-              <div class="form-group">
-                <label for="msrp">MSRP</label>
-                <input type="number" class="form-control" id="msrp">
-              </div>
               <div  style="text-align: left;">
                 <button type="submit" class="btn btn-outline-success" onclick="save()" id="guardar" style="margin-bottom: 20px; margin-left: 100px;">Registrar</button>
                 <button type="submit" class="btn btn-outline-warning" onclick="update()" id="Modificar" style="margin-bottom: 20px; margin-left: 100px;">Modificar</button>
@@ -84,6 +63,6 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="./mainProducts.js"></script>
+  <script src="./mainProductLines.js"></script>
 </body> <!-- -->
 </html>

@@ -11,7 +11,7 @@ const getCustomers = () => {
         headers: { "Accept": "application/json" },
         url: 'http://localhost:8084/Actividad2_war_exploded/customers'
     }).done(res => {
-        let listCEmployees = res;
+        let listEmployees = res;
         let table = $("#table");
 
         table.append(

@@ -42,7 +42,7 @@ public class ProductLinesDao {
         return listProductsLines;
     }
 
-        public ProductLines findByProductLine(String productLine){
+        public ProductLines findByProductLines(String productLine){
             ProductLines productsLine = null;
 
         try{

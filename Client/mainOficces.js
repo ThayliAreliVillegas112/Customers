@@ -11,12 +11,11 @@ const getOffices = () => {
         headers: { "Accept": "application/json" },
         url: 'http://localhost:8084/Actividad2_war_exploded/offices'
     }).done(res => {
-        let listCEmployees = res;
+        let listOffices = res;
         let table = $("#table");
 
         table.append(
         "<tr class='bg-info text-dark'>"+
-        +"<th scope='col'></th>"
         +"<th scope='col'>Office Code</th>"
         +"<th scope='col'>City</th>"
         +"<th scope='col'>Phone</th>"
@@ -80,16 +79,16 @@ const findById = id => {
 
 
 const save = () => {
-    let officess = new Object();
-    customer.officeCode = document.getElementById("officeCode").value
-    customer.city = document.getElementById("city").value
-    customer.phone = document.getElementById("phone").value
-    customer.addressLine1 = document.getElementById("addressLine1").value
-    customer.addressLine2 = document.getElementById("addressLine2").value
-    customer.state = document.getElementById("state").value
-    customer.country = document.getElementById("country").value
-    customer.postalCode = document.getElementById("postalCode").value
-    customer.territory = document.getElementById("territory").value
+    let offices = new Object();
+    offices.officeCode = document.getElementById("officeCode").value
+    offices.city = document.getElementById("city").value
+    offices.phone = document.getElementById("phone").value
+    offices.addressLine1 = document.getElementById("addressLine1").value
+    offices.addressLine2 = document.getElementById("addressLine2").value
+    offices.state = document.getElementById("state").value
+    offices.country = document.getElementById("country").value
+    offices.postalCode = document.getElementById("postalCode").value
+    offices.territory = document.getElementById("territory").value
 
     $.ajax({
         type: 'POST',
@@ -98,7 +97,7 @@ const save = () => {
             "Content-Type": "application/x-www-form-urlencoded"
         },
         url: 'http://localhost:8084/Actividad2_war_exploded/offices/save',
-        data: customer
+        data: offices
     }).done(res => {
         console.log(res);
         guardar.style.display = "block"
@@ -140,7 +139,7 @@ const update = () => {
             "Content-Type": "application/x-www-form-urlencoded"
         },
         url: 'http://localhost:8084/Actividad2_war_exploded/offices/save'+id,
-        data: customer
+        data: offices
     }).done(res => {
         console.log(res)
         guardar.style.display = "block"
@@ -154,7 +153,7 @@ const update = () => {
         document.getElementById("state").value=""
         document.getElementById("country").value=""
         document.getElementById("postalCode").value=""
-        document.getElementById("territory").value=res.phone
+        document.getElementById("territory").value=""
     
         
     });
